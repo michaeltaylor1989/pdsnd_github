@@ -32,7 +32,8 @@ $       $$$$$       $   4$$$$$$$     L       *$$$"      4
 def get_city():
     print('Hello! Let\'s explore some US bikeshare data!\nIn this application we have bikeshare data from Jan-Jun of 2017 for Chicago, Washington, and New York City.')
     city = ""
-    while city.lower() not in ['chicago', 'new york city', 'washington']:
+
+
         city = input("Would you like to see data for 'Chicago', 'New York City', or 'Washington'):")
         if city.lower() == 'chicago':
             print("Great, let's take a look at the Chicago data!")
@@ -50,10 +51,14 @@ def get_city():
             print("That's not a city we have data for, Please input either Chicago, New York, or Washington.")
     return city
 
-    if city.lower() in ["chicago", "new_york", "washington"]:
-        return city.lower()
-    else:
-        print("That's not a city we have data for, Please input either Chicago, New York, or Washington.")
+"""  if city.lower() in ["chicago", "new_york", "washington"]:
+                return city.lower()
+                print("Great, let's take a look at the data!")
+                print('-'*40)
+                break
+            else:
+                print("That's not a city we have data for, Please input either Chicago, New York, or Washington.")
+        return city """
 
 # TO DO: get user input for month (all, january, february, ... , june)
 def get_month():
@@ -92,6 +97,8 @@ def get_month():
         else:
             print("That\'s not a month we have data for, Please input either 'January', 'February', 'March', 'April', 'May', 'June' or 'All'.")
     return month
+
+""" Remove elif statements to make this more efficient"""
 
 # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
 def get_day():
@@ -135,6 +142,8 @@ def get_day():
             print("")
     return day
     print('-'*40)
+
+""" Remove elif statements to make this more efficient """
 
 def load_data(city, month, day):
     """
