@@ -32,8 +32,7 @@ $       $$$$$       $   4$$$$$$$     L       *$$$"      4
 def get_city():
     print('Hello! Let\'s explore some US bikeshare data!\nIn this application we have bikeshare data from Jan-Jun of 2017 for Chicago, Washington, and New York City.')
     city = ""
-
-
+    while city.lower() not in ['chicago', 'washington', 'new york city']:
         city = input("Would you like to see data for 'Chicago', 'New York City', or 'Washington'):")
         if city.lower() == 'chicago':
             print("Great, let's take a look at the Chicago data!")
