@@ -143,6 +143,8 @@ def get_day():
     return day
     print('-'*40)
 
+""" Remove elif statements to make this more efficient """
+
 def load_data(city, month, day):
     """
     Loads data for the specified city and filters by month and day if applicable.
