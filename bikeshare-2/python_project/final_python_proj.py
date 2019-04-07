@@ -98,6 +98,8 @@ def get_month():
             print("That\'s not a month we have data for, Please input either 'January', 'February', 'March', 'April', 'May', 'June' or 'All'.")
     return month
 
+""" Remove elif statements to make this more efficient"""
+
 # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
 def get_day():
     print("Ok now let's filter the data for the desired day")
