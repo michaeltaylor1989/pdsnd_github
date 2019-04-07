@@ -50,6 +50,11 @@ def get_city():
             print("That's not a city we have data for, Please input either Chicago, New York, or Washington.")
     return city
 
+    if city.lower() in ["chicago", "new_york", "washington"]:
+        return city.lower()
+    else:
+        print("That's not a city we have data for, Please input either Chicago, New York, or Washington.")
+
 # TO DO: get user input for month (all, january, february, ... , june)
 def get_month():
     print("Ok now let's filter the data for the desired month.")
